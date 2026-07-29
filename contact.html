@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Sales — HERUNO HALO</title>
+<meta name="description" content="Talk to HERUNO's sales team about adding HERUNO HALO to your promotional merchandise programme.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a href="index.html" class="logo">HERUNO <span class="tag">HALO</span></a>
+    <nav aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="industries.html">Industries</a></li>
+        <li><a href="contact.html" aria-current="page">Contact Sales</a></li>
+      </ul>
+    </nav>
+    <div class="nav-cta">
+      <a href="products.html" class="btn btn-secondary">View Products</a>
+      <a href="contact.html" class="btn btn-primary">Contact Sales</a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero" style="padding-bottom:40px;">
+    <div class="container">
+      <p class="eyebrow">Contact Sales</p>
+      <h1 style="max-width:20ch;">Talk to us about your project</h1>
+      <p class="lede">Whether you're planning promotional merchandise for a restaurant, hotel, office or event, we'd love to hear about your project. We'll help you choose the right HERUNO HALO, discuss branding options and answer any questions before you place an order.</p>
+      <div class="btn-row">
+        <a href="#sales-form" class="btn btn-primary">Contact Sales</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Order journey -->
+  <section class="section-alt">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Your Order Journey</p>
+        <h2>From first enquiry to delivery.</h2>
+        <p>Lead times typically begin once your branding has been approved and the agreed deposit has been received.</p>
+      </div>
+      <ol class="journey-list">
+        <li class="journey-step">
+          <span class="step-num">1</span>
+          <h3>Tell us about your project</h3>
+          <p>We'll discuss your organisation, branding requirements and order quantity.</p>
+        </li>
+        <li class="journey-step">
+          <span class="step-num">2</span>
+          <h3>We'll prepare your branding proof</h3>
+          <p>You'll receive a digital artwork proof showing how your logo will appear on HERUNO HALO. If required, we can also discuss providing a physical HERUNO sample during the process.</p>
+        </li>
+        <li class="journey-step">
+          <span class="step-num">3</span>
+          <h3>Approve your branding</h3>
+          <p>Once you're happy with the artwork, we'll ask for your final approval before production begins.</p>
+        </li>
+        <li class="journey-step">
+          <span class="step-num">4</span>
+          <h3>Production</h3>
+          <p>Your order moves into production using your approved branding.</p>
+        </li>
+        <li class="journey-step">
+          <span class="step-num">5</span>
+          <h3>Delivery</h3>
+          <p>Your finished order is delivered directly to your organisation.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section style="padding-top:0;">
+    <div class="container contact-wrap">
+
+      <div>
+        <div id="form-success" class="form-success" role="status">Thank you — your enquiry has been received. A member of our sales team will be in touch shortly.</div>
+        <form id="sales-form" class="contact-form" novalidate>
+          <div class="field-row">
+            <div class="field">
+              <label for="company">Company name</label>
+              <input type="text" id="company" name="company" required autocomplete="organization">
+            </div>
+            <div class="field">
+              <label for="name">Your name</label>
+              <input type="text" id="name" name="name" required autocomplete="name">
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="email">Work email</label>
+              <input type="email" id="email" name="email" required autocomplete="email">
+            </div>
+            <div class="field">
+              <label for="phone">Phone <span style="font-weight:400; color:var(--steel);">(optional)</span></label>
+              <input type="tel" id="phone" name="phone" autocomplete="tel">
+            </div>
+          </div>
+          <div class="field">
+            <label for="industry">Industry</label>
+            <select id="industry" name="industry" required>
+              <option value="" disabled selected>Select an industry</option>
+              <option value="restaurants">Restaurants</option>
+              <option value="hotels">Hotels</option>
+              <option value="offices">Offices</option>
+              <option value="events">Events</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="message">What are you looking for?</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Quantities, timing, branding requirements — anything that helps us respond accurately."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;">Send Enquiry</button>
+          <p class="form-note">This is a working prototype — form submissions are not yet connected to a live inbox or CRM.</p>
+        </form>
+      </div>
+
+      <div>
+        <h2 style="font-size:1.3rem;">Contact details</h2>
+        <ul class="contact-detail-list">
+          <li>
+            <span class="k">Sales enquiries</span>
+            <span class="v">[Sales email address to be confirmed]</span>
+          </li>
+          <li>
+            <span class="k">Phone</span>
+            <span class="v">[Phone number to be confirmed]</span>
+          </li>
+          <li>
+            <span class="k">Company</span>
+            <span class="v">14Fashion Group Ltd, trading as HERUNO</span>
+          </li>
+          <li>
+            <span class="k">Registered address</span>
+            <span class="v">[Registered address to be confirmed]</span>
+          </li>
+        </ul>
+
+        <div class="halo-panel" style="padding:24px; grid-template-columns:1fr;">
+          <div>
+            <p class="eyebrow">Personal Support</p>
+            <h3 class="mt-0">What to expect after you enquire</h3>
+            <ul class="checklist" style="margin-top:12px;">
+              <li>A response from a member of our sales team</li>
+              <li>A recommendation based on your bag sizes and volumes</li>
+              <li>Branding options reviewed and approved before production</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="logo">HERUNO <span class="tag">HALO</span></a>
+        <p style="margin-top:14px; max-width:34ch; font-size:0.9rem;">Practical promotional merchandise, designed in the UK. A brand of 14Fashion Group Ltd.</p>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="industries.html">Industries</a></li>
+          <li><a href="contact.html">Contact Sales</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms &amp; Conditions</a></li>
+          <li><a href="contact.html">Contact Details</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span data-year>2026</span> 14Fashion Group Ltd. HERUNO and HERUNO HALO are trademarks of 14Fashion Group Ltd.</span>
+      <span>All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
