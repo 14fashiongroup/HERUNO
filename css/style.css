@@ -719,7 +719,22 @@ section {
 
 .footer-bottom > *:last-child {
   text-align: right;
-  max-width: 680px;
+  max-width: none;
+}
+
+.footer-company-name {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.footer-company-address {
+  display: inline-block;
+}
+
+@media (max-width: 1040px) {
+  .footer-company-name {
+    white-space: normal;
+  }
 }
 
 @media (max-width: 860px) {
