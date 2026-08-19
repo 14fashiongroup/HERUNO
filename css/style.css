@@ -704,12 +704,35 @@ section {
 .footer-bottom {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   padding-top: 22px;
   font-size: 0.8rem;
+  line-height: 1.6;
   color: var(--steel);
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 14px 24px;
+}
+
+.footer-bottom > *:first-child {
+  flex-shrink: 0;
+}
+
+.footer-bottom > *:last-child {
+  text-align: right;
+  max-width: 680px;
+}
+
+@media (max-width: 860px) {
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .footer-bottom > *:last-child {
+    text-align: left;
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 760px) {
@@ -1046,6 +1069,17 @@ section {
 .contact-detail-list .v {
   font-size: 1rem;
   color: var(--ink);
+}
+
+.contact-detail-list .v a {
+  color: var(--ink);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.contact-detail-list .v a:hover {
+  color: var(--brass-deep);
+  text-decoration: underline;
 }
 
 /* ---------- Legal pages ---------- */
